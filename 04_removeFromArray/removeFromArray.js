@@ -1,5 +1,5 @@
 //the last argument that starts with ... and collects all parameters after the first into an array
-const removeFromArray = function(myArray, ...args) {   
+const removeFromArray = function(myArray,...args) {   
 
     //this cycles through each element in the rest parameter array that was created in line 2
     for (element of args) {  
@@ -24,14 +24,14 @@ const removeFromArray = function(myArray, ...args) {
 //     // create a new empty array
 //     const newArray = [];
 //     // use forEach to go through the array
-//     array.forEach((item) => {
-//       // push every element into the new array
-//       // UNLESS it is included in the function arguments
-//       // so we create a new array with every item, except those that should be removed
-//       if (!args.includes(item)) {
-//         newArray.push(item);
-//       }
-//     });
+    array.forEach((item) => {
+      // push every element into the new array
+      // UNLESS it is included in the function arguments
+      // so we create a new array with every item, except those that should be removed
+      if (!args.includes(item)) {
+        newArray.push(item);
+      }
+    });
 //     // and return that array
 //     return newArray;
 //   };

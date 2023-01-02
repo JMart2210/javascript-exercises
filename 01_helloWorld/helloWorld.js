@@ -1,5 +1,17 @@
-const helloWorld = function() {
-  return 'Hello, World!';
-};
+// const helloWorld = function() {
+//   return 'Hello, World!';
+// };
 
-module.exports = helloWorld;
+// module.exports = helloWorld;
+
+const array = [15, 16, 17, 18, 19];
+
+function reducer(accumulator, currentValue, index) {
+  const returns = accumulator + currentValue;
+  console.log(
+    `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
+  );
+  return returns;
+}
+
+array.reduce(reducer);
