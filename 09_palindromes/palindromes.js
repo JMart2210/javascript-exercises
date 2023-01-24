@@ -1,9 +1,9 @@
 const palindromes = function (text) {
-    text = text.toLowerCase();              //makes string lower case
-    text = text.replace(/[^\w\']|_/g, "");  //remove special characters and spaces
-    let reversed = text;                    //creates copy of text
-    reversed = reversed.split('').reverse().join('');//converts to array, reverses it, and converts back to string
-    return (text === reversed);             // checks if reversed string matches text
+  text = text.toLowerCase(); //makes string lower case
+  text = text.replace(/[^\w\']|_/g, ""); //remove special characters and spaces
+  let reversed = text; //creates copy of text
+  reversed = reversed.split("").reverse().join(""); //converts to array, reverses it, and converts back to string
+  return text === reversed; // checks if reversed string matches text
 };
 
 //GIVEN SOLUTION: this solution is more condensed, but same basic logic.

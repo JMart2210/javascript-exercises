@@ -1,21 +1,23 @@
-const sumAll = function(a, b) {
-    let sum = 0;
-    //this makes sure a is smaller than b
-    if (a > b) {
-        let temp = a;
-        a = b;
-        b = temp;
-    }
-    //this checks to mak sure the arguments are positive and numbers.
-    if (a < 0 ||  //only need to check a because we know a < b. We might get errors since we didn't make sure they were numbers first?
-        typeof a != 'number' ||
-        typeof b != 'number') 
-        return 'ERROR';
+const sumAll = function (a, b) {
+  let sum = 0;
+  //this makes sure a is smaller than b
+  if (a > b) {
+    let temp = a;
+    a = b;
+    b = temp;
+  }
+  //this checks to mak sure the arguments are positive and numbers.
+  if (
+    a < 0 || //only need to check a because we know a < b. We might get errors since we didn't make sure they were numbers first?
+    typeof a != "number" ||
+    typeof b != "number"
+  )
+    return "ERROR";
 
-    for (;a<=b;a++) {
-        sum += a;
-    }
-    return sum;
+  for (; a <= b; a++) {
+    sum += a;
+  }
+  return sum;
 };
 
 // Alternative solution
@@ -36,5 +38,3 @@ const sumAll = function(a, b) {
 
 // Do not edit below this line
 module.exports = sumAll;
-
-

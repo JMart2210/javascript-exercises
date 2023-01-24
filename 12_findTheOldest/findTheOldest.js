@@ -1,7 +1,7 @@
 // const findTheOldest = function(array) {
 //   // created variable to use in comparing ages
 //   let oldestAge = 0;
-//   // Map allows you to put every item in the array through a function  
+//   // Map allows you to put every item in the array through a function
 //   array.map(item => {
 //     // this handles entries that have no death year.
 //     if (!item.yearOfDeath) item.yearOfDeath = new Date().getFullYear();
@@ -11,11 +11,11 @@
 //     if (item.age > oldestAge) oldestAge = item.age;
 //     return item;
 //   });
-//   // My issue was the correct answer was returning as the first object inside of an 
+//   // My issue was the correct answer was returning as the first object inside of an
 //   // array, not just as an object. So I decided to create an empty object.
 //   let ans = {};
 //   // assigns the filtered array to the ans object. I specified index[0] manually to get it to work.
-//   Object.assign(ans, array.filter( item => item.age == oldestAge)[0]); 
+//   Object.assign(ans, array.filter( item => item.age == oldestAge)[0]);
 
 //   return ans;
 // };
@@ -34,7 +34,7 @@
 //     death = new Date().getFullYear();
 //   }
 //   return death - birth;
-// }; 
+// };
 
 // Do not edit below this line
 module.exports = findTheOldest;
@@ -59,7 +59,7 @@ module.exports = findTheOldest;
 // ]
 
 //     const person = {name: 'Ray', year: 2022};
-    
+
 // let test = findTheOldest(people);
 // console.log(test);
 // console.log(people);

@@ -1,24 +1,24 @@
-const add = function(a, b) {
+const add = function (a, b) {
   return a + b;
 };
 
-const subtract = function(a, b) {
-  return a - b;	
+const subtract = function (a, b) {
+  return a - b;
 };
 
-const sum = function(array) {
+const sum = function (array) {
   let total = 0;
   for (element of array) {
     total += element;
   }
   return total;
-}
-// GIVEN SOLUTION -No idea how this works: 
+};
+// GIVEN SOLUTION -No idea how this works:
 // const sum = function(array) {
 //   return array.reduce((total, current) => total + current, 0);
 // };
 
-const multiply = function(array) {
+const multiply = function (array) {
   let total = 0;
   for (element of array) {
     if (!total) total = element;
@@ -33,11 +33,11 @@ const multiply = function(array) {
 //     : 0;
 //};
 
-const power = function(num, pow) {
+const power = function (num, pow) {
   let total = num;
-  for (let i = pow - 1; i > 0;i--) {
+  for (let i = pow - 1; i > 0; i--) {
     total *= num;
-  }	
+  }
   return total;
 };
 //GIVEN SOLUTION -this makes sense, but I thought exercise was for us to manually do it. oh well!
@@ -45,14 +45,16 @@ const power = function(num, pow) {
 //   return Math.pow(a, b);
 // };
 
-const factorial = function(num) {
+const factorial = function (num) {
   if (num === 0) return 1;
-  	let total = 0;
-    for ( ; num > 0 ; num-- ) {
-      if (!total) total = num;  //I added this to handle the problem of multiplying by 0 in the first round.
-      else total *= num;
-    }
-    return total;
+  let total = 0;
+  for (; num > 0; num--) {
+    if (!total)
+      total =
+        num; //I added this to handle the problem of multiplying by 0 in the first round.
+    else total *= num;
+  }
+  return total;
 };
 //GIVEN SOLUTION - Their solution to the multiplying by 0 problem is probably better than how I handled it.
 // const factorial = function(n) {
@@ -65,13 +67,12 @@ const factorial = function(num) {
 // };
 //SECOND SOLUTION USING RECURSION:
 // This makes a lot of sense.
-const recursiveFactorial = function(n) {
+const recursiveFactorial = function (n) {
   if (n === 0) {
     return 1;
   }
-  return n * recursiveFactorial(n-1);
+  return n * recursiveFactorial(n - 1);
 };
-
 
 // Do not edit below this line
 module.exports = {
@@ -80,5 +81,5 @@ module.exports = {
   sum,
   multiply,
   power,
-  factorial
+  factorial,
 };

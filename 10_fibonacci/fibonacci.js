@@ -1,8 +1,8 @@
-const fibonacci = function(n) {
-    if (n < 0) return 'OOPS';
-    if (n < 3) return 1;
-    
-    return fibonacci(n-1) + fibonacci(n-2);
+const fibonacci = function (n) {
+  if (n < 0) return "OOPS";
+  if (n < 3) return 1;
+
+  return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
 //GIVEN SOLUTION - they used a temporary variable to make the algorithm work
@@ -23,7 +23,7 @@ const fibonacci = function(n) {
 // Do not edit below this line
 module.exports = fibonacci;
 
-// I used these to test functionality 
+// I used these to test functionality
 // let test = fibonacci(1);
 // let test2 = fibonacci(2);
 // let test3 = fibonacci(3);
